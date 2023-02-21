@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,200;0,8..30,300;0,8..30,400;1,8..30,700&family=Roboto&display=swap');
+body {
+    font-family: 'Piazzolla', serif;
+}
+/* Leftbar styling  >>>*/
+
+
+.leftbar {
+    display: flex;
+}
+
+.main-container {
+    height: 92vh;
+    width: 300px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-options {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    /* min-height: 150px; */
+    align-items: center;
+    font-weight: 500;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    text-align: center;
+    height: 90%;
+}
+
+.option {
+    cursor: pointer;
+    display: flex;
+    /* border: 2px solid green; */
+    width: 90%;
+    color: #acacaa;
+    padding: 3px 3px;
+    margin: 4px 0;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.option i {
+    margin-top: 2px;
+    margin-left: 8px;
+    color: #acacaa;
+    /* color: #E5E4E2; */
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.option:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+.dm {
+    color: white;
+}
+
+.heading {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    color: #acacaa;
+    /* border: 2px solid blue; */
+    padding: 0 15px;
+}
+
+.heading .plus {
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.heading .text {
+    font-size: 14px;
+}
+
+/* MenuNav Styling >>> */
+
+.search-box {
+    z-index: 999;
+    border-bottom: 1px solid black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    background-color: #222;
+    /* justify-content: center; */
+}
+
+.search-box div input {
+    margin-left: 15px;
+    background: #111;
+    outline: none;
+    border: none;
+    width: 250px;
+    padding: 7px 15px 7px 7px;
+    color: #c7c1c1;
+    border-radius: 3px;
+}
+
+.MenuNav {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: #333;
+ 
+}
+
+.menu ul {
+    /* margin-left: -25px; */
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #acacaa;
+    padding: 2px 5px;
+}
+
+.menu ul li .message-req {
+    color: white;
+}
+
+.menu ul li .message-req i {
+    margin-right: 3px;
+}
+
+.menu ul li .friends {
+    color: white;
+}
+
+.menu ul li .addFriend {
+    background-color: rgb(24, 133, 24);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+    color: white;
+    border-radius: 3px;
+}
+
+
+
+
+/* Content Div Stling  */
+
+
+
+
+.active{
+    background-color: #555;
+}
+
+.content {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    padding-right: 2px;
+    background-color: #333;
+    width: 77.9vw;
+    height: 92vh;
+}
+
+.header {
+    /* border: 2px solid red; */
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .search input {
+    width: 1000px;
+    padding: 7px 15px 7px 7px;
+    border-radius: 3px;
+    background: #111;
+    outline: none;
+    border: none;
+    color: #c7c1c1;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.container .content-nav .text {
+    color: #acacaa;
+    padding: 5px 0;
+}
+
+.main-content {
+    padding: 5px 0;
+   
+}
+
+.main-content .userList .user {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #444;
+}
+
+.main-content .userList .user .leftSide {
+    display: flex;
+    align-items: center;
+    color: #acacaa;
+}
+
+.main-content .userList .user .leftSide i {
+    font-size: 25px;
+    color: white;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 50px;
+    margin-right: 7px;
+}
+
+.main-content .userList .user .leftSide .name {
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.main-content .userList .user .leftSide .name:hover{
+    text-decoration: underline;
+}
+
+.main-content .userList .user .leftSide .tag {
+    font-size: 13px;
+}
+
+.main-content .userList .user .rightSide i {
+    color: #acacaa;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #222;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.main-content .userList .user .rightSide i:hover{
+    color: white;
+}
